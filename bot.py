@@ -8,7 +8,7 @@ intents = discord.Intents.default()
 intents.message_content = True  # Enable message content intent
 
 # Retrieve the Discord bot token and Steam API key from environment variables
-TOKEN = os.getenv('HELLO')  # Get the Discord bot token from environment variables
+TOKEN = os.getenv('Hello')  # Get the Discord bot token from environment variables
 STEAM_API_KEY = os.getenv('Hi')  # Get the Steam API key from environment variables
 
 if TOKEN is None:
