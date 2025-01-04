@@ -14,6 +14,8 @@ STEAM_API_KEY = os.getenv('Hi')  # Get the Steam API key from environment variab
 if TOKEN is None:
     print("Error: DISCORD_BOT_TOKEN is not set.")
     exit(1)
+else :
+    print("Discord bot token is set.")
 
 bot = commands.Bot(command_prefix='!', intents=intents)
 
