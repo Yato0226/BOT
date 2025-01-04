@@ -11,6 +11,10 @@ intents.message_content = True  # Enable message content intent
 TOKEN = os.getenv('Hello')  # Get the Discord bot token from environment variables
 STEAM_API_KEY = os.getenv('Hi')  # Get the Steam API key from environment variables
 
+if TOKEN is None:
+    print("Error: DISCORD_BOT_TOKEN is not set.")
+    exit(1)
+
 bot = commands.Bot(command_prefix='!', intents=intents)
 
 @bot.command()
