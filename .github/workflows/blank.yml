@@ -25,6 +25,6 @@ jobs:
 
       - name: Run bot
         env:
-          DISCORD_BOT_TOKEN: ${{ secrets.HELLO }}
-          STEAM_API_KEY: ${{ secrets.HI }}
+          Hello: ${{ secrets.HELLO }}
+          Hi: ${{ secrets.HI }}
         run: python bot.py
